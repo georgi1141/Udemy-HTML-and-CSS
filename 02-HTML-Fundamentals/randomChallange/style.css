@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -8,7 +9,6 @@ body {
 }
 
 article {
-  position: relative;
   border: 5px solid black;
   width: 825px;
   margin: 50px auto;
@@ -22,13 +22,22 @@ article {
   padding: 15px;
 }
 .price {
+  float: left;
   font-size: 30px;
 }
 .shipping {
+  float: right;
   color: rgb(152, 143, 143);
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 20px;
+
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+}
+
+.space {
+  clear: both;
 }
 
 a.info:link,
@@ -62,9 +71,9 @@ button:hover {
 }
 
 .pr {
-  margin: 24px 0;
   font-weight: bold;
   text-transform: uppercase;
+  clear: both;
 }
 
 .list {
@@ -74,15 +83,15 @@ li {
   margin-bottom: 20px;
   margin-left: 30px;
 }
-article::after {
-  padding: 5px 10px;
-  letter-spacing: 2px;
-  position: absolute;
-  color: white;
+.sale {
   background-color: red;
-  content: "SALE";
-  top: -15px;
-  left: -30px;
+  color: white;
+  position: absolute;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-left: -40px;
 }
 
 .black {
@@ -108,4 +117,23 @@ article::after {
 
   margin-right: 10px;
   padding: 10px 10px;
+}
+
+.img {
+  float: left;
+  margin-right: 40px;
+}
+
+.middle-container {
+  width: 243px;
+  float: left;
+  margin-right: 39px;
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+.last-container {
+  width: 243px;
+  float: left;
+  margin-top: 33px;
 }
