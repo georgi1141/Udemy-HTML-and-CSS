@@ -10,7 +10,7 @@ body {
 
 article {
   border: 5px solid black;
-  width: 825px;
+  width: 900px;
   margin: 50px auto;
 }
 
@@ -22,22 +22,12 @@ article {
   padding: 15px;
 }
 .price {
-  float: left;
   font-size: 30px;
 }
 .shipping {
-  float: right;
   color: rgb(152, 143, 143);
   text-transform: uppercase;
   font-weight: bold;
-
-  top: 0;
-  right: 0;
-  margin-top: 10px;
-}
-
-.space {
-  clear: both;
 }
 
 a.info:link,
@@ -74,6 +64,7 @@ button:hover {
   font-weight: bold;
   text-transform: uppercase;
   clear: both;
+  margin: 20px 0;
 }
 
 .list {
@@ -112,28 +103,30 @@ li {
 .brown {
   background-color: brown;
 }
-.color {
-  display: inline-block;
 
-  margin-right: 10px;
-  padding: 10px 10px;
+.color-container {
+  display: flex;
+  gap: 10px;
 }
-
-.img {
-  float: left;
-  margin-right: 40px;
+.color {
+  height: 40px;
+  width: 40px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  gap: 40px;
 }
 
 .middle-container {
-  width: 243px;
-  float: left;
-  margin-right: 39px;
-  padding-top: 20px;
-  margin-top: 8px;
+  margin-top: 20px;
+  flex: 1;
 }
-
 .last-container {
-  width: 243px;
-  float: left;
-  margin-top: 33px;
+  flex: 1;
 }
