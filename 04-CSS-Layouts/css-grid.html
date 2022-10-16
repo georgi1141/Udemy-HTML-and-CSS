@@ -34,17 +34,26 @@
 
       .container--1 {
         /* STARTER */
+
         font-family: sans-serif;
         background-color: #ddd;
+
         font-size: 40px;
         margin: 40px;
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+
         grid-template-rows: 1fr 1fr;
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 40px;
+        display: none;
+      }
+
+      .el--2 {
+        grid-column: 1 / 2;
+        grid-row: 2/3;
       }
 
       .container--2 {
@@ -54,11 +63,18 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
-      }
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+
+        align-items: center;
     </style>
   </head>
   <body>
